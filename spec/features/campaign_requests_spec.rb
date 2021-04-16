@@ -20,7 +20,7 @@ feature "Campaign requests" do
       "tags" => %w[govt_form campaign],
       "comment" => {
         "body" =>
-"[Are you applying for the campaign platform or a bespoke microsite?]
+"[Are you applying for the campaign platform or a multi-page campaign?]
 Campaign platform
 
 [Name of the Head of Digital Communications who signed off the campaign website application]

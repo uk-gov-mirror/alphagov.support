@@ -46,7 +46,7 @@ module Support
       it { should validate_acceptance_of(:has_read_guidance_confirmation) }
       it { should validate_acceptance_of(:has_read_oasis_guidance_confirmation) }
 
-      it { should validate_inclusion_of(:type_of_site).in?(["Campaign platform", "Bespoke microsite"]) }
+      it { should validate_inclusion_of(:type_of_site).in?(["Campaign platform", "Multi-page campaign"]) }
 
       it { should validate_acceptance_of(:has_read_guidance_confirmation) }
       it { should validate_acceptance_of(:has_read_oasis_guidance_confirmation) }
