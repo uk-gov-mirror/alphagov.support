@@ -3,15 +3,8 @@
 </div>
 
 <p>
-  Use this form for : Campaign Platform site or microsite
-<ul>
-  <li>A campaign platform site is a one page website on campaign.gov.uk</li>
-  <li>Microsite websites are not built on GOV.UK and may or may not have
-    a gov.uk url.
-    Microsite websites <%= link_to 'fall under Cabinet Office digital service expenditure', 'https://www.google.com/url?q=https://www.gov.uk/service-manual/agile-delivery/spend-controls-check-if-you-need-approval-to-spend-money-on-a-service%23when-your-service-is-considered-a-digital-service&sa=D&ust=1518444538536000&usg=AFQjCNFvnZ81hn7cqJnGHgcgQ0V0bdwCBQ'%>
-    therefore GDS spend approval must be sought following approval from GCS to develop a campaign microsite.
-  </li>
-</ul>
+  Use this form for : Campaign Platform site or a multi-page campaign <br>
+  <br> 
   For either type of site, please answer the questions below.
 </p>
 
@@ -24,11 +17,11 @@
     <div class="form-group">
       <span class="form-label control-label">
         <%= r.label :type_of_site do %>
-          Are you applying for the campaign platform or a bespoke microsite?<abbr title="required">*</abbr>
+          Are you applying for the campaign platform or a multi-page campaign?<abbr title="required">*</abbr>
         <% end %>
       </span>
       <span class="form-wrapper">
-        <%= r.collection_radio_buttons :type_of_site, ["Campaign platform", "Bespoke microsite"], :itself, :itself, required: true, aria: { required: true } do |builder| %>
+        <%= r.collection_radio_buttons :type_of_site, ["Campaign platform", "Multi-page campaign"], :itself, :itself, required: true, aria: { required: true } do |builder| %>
           <div class="radio">
             <%= builder.label(class: "custom-control-label") do %>
               <%= builder.radio_button(class: "custom-control-input") %>
